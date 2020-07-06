@@ -11,11 +11,30 @@
  Target Server Version : 50540
  File Encoding         : 65001
 
- Date: 06/07/2020 22:07:00
+ Date: 06/07/2020 22:54:19
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for goods
+-- ----------------------------
+DROP TABLE IF EXISTS `goods`;
+CREATE TABLE `goods`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `price` int(11) NOT NULL DEFAULT -1 COMMENT 'price',
+  `url` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT 'url',
+  `good_classfiy` int(11) NOT NULL DEFAULT -1 COMMENT 'goodClassfiy',
+  `delete` int(11) NOT NULL DEFAULT -1 COMMENT 'delete',
+  `good_detail` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT 'goodDetail',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = 'goods' ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of goods
+-- ----------------------------
+INSERT INTO `goods` VALUES (1, 12, '12', -1, -1, 'iphonex');
 
 -- ----------------------------
 -- Table structure for user
