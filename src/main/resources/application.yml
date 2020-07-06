@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+
+server:
+  port: 8080
+
+mybatis:
+  type-aliases-package: com.mybatis.test.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #开启驼峰命名转换
+    map-underscore-to-camel-case: true
