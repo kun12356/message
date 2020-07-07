@@ -1,13 +1,13 @@
 package com.mybatis.test;
 
-import org.mybatis.spring.annotation.MapperScan;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 
 @SpringBootApplication
-@MapperScan("com.mybatis.test.dao")
+@EnableDubbo
 public class MyApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);

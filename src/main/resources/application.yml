@@ -5,11 +5,11 @@ spring:
     password: root
 
 server:
-  port: 8080
+  port: 8081
 
-mybatis:
-  type-aliases-package: com.mybatis.test.entity
-  mapper-locations: classpath:mapper/*.xml
-  configuration:
-    #开启驼峰命名转换
-    map-underscore-to-camel-case: true
+
+dubbo:
+  application:
+    name: customer
+  registry:
+    address: zookeeper://127.0.0.1:2181
