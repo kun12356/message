@@ -4,7 +4,6 @@ package com.mybatis.test.controller;
 import com.rrg.myshop.entity.Goods;
 import com.rrg.myshop.service.GoodsService;
 import org.apache.dubbo.config.annotation.Reference;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
