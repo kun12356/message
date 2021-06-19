@@ -17,6 +17,7 @@ public class ShopCartController {
 
     @RequestMapping("/shopcartList")
     public List<ShoppingCart> getByUsrId(){
+        int i=1/0;
         return shoppingCartService.findAllByUserId(1);
     }
 }
